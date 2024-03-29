@@ -38,6 +38,8 @@ We can list NTFS permissions using the **icacls** command.<br>
 
 ```
 icacls C:\Users /grant joe:f
+```
+```
 icacls C:\Users /remove joe
 ```
 
@@ -75,15 +77,19 @@ We can use it directly from a share:<br>
 \\live.sysinternals.com\tools\
 ```
 
-**Task Manager** is for managing Windows systems.<br>
-
-**Process Explorer** is a sysinternal tool to show wich processes are loaded when a program runs.<br>
+Useful tools:<br>
+- **Task Manager**
+- **Process Explorer** (part of sysinternals suite)
 
 **sc** command can also be used to manage services.<br>
 
 ```
 sc qc service_name
+```
+```
 sc //hostname service_name
+```
+```
 sc stop service_name
 ```
 The **Get-Acl** command show services permissions.<br>
